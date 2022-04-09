@@ -110,8 +110,9 @@ body{
 .benefits__row{
   display: flex;
   justify-content: center;
-  max-width: 794px;
+  max-width: 814px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .benefits__item{
   text-align: center;
@@ -148,5 +149,85 @@ body{
   position: absolute;
   left: 50px;
   bottom: 50px;
+  font-size: 24px;
+  line-height: 28px;
 }
-
+.look{
+  background-image: url(../img/look-bg.jpg);
+  height: 560px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.look__container{
+  display: flex;
+  align-items: flex-end;
+  padding: 180px 0;
+  gap: 35px;
+}
+.look__title{
+  margin-bottom: 50px;
+}
+.look__content,
+.look__form{
+  flex-basis: 50%;
+}
+.look__form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-name{
+  border: 0;
+  padding: 11px 95px;
+  opacity: 0.2;
+  max-width: 255px;
+  margin-right: 30px;
+  margin-bottom: 35px;
+  transition: all .3s;
+}
+.form-phone{
+  border: 0;
+  padding: 11px 83px;
+  opacity: 0.2;
+  max-width: 255px;
+  margin-bottom: 35px;
+  transition: all .3s;
+}
+.form-name::placeholder,
+.form-phone::placeholder{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #BEBEBE;
+}
+.form-name:hover, .form-name:focus,
+.form-phone:hover, .form-phone:focus{
+  opacity: .7;
+  border-radius: 10px;
+}
+.look__form-text{
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #E7E7E7;
+  max-width: 255px;
+  display: inline-block;
+  margin-right: 30px;
+}
+.form-btn{
+  padding: 11px 54px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  background: #D4C17F;
+  cursor: pointer;
+  max-width: 255px;
+  transition: all .3s;
+}
+.form-btn:hover{
+  background-color: #b59b42;
+}
