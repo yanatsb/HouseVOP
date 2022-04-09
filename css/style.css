@@ -26,11 +26,21 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  background: #242B33;
+  color: #fff;
 }
 .container{
   max-width: 1130px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.title{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #D4C17F;
 }
 .header__container{
   display: flex;
@@ -97,3 +107,46 @@ body{
   text-align: center;
   color: #FFFFFF;
 }
+.benefits__row{
+  display: flex;
+  justify-content: center;
+  max-width: 794px;
+  margin: 0 auto;
+}
+.benefits__item{
+  text-align: center;
+}
+.benefits__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 0;
+}
+.benefits__img{
+  margin-bottom: 47px;
+}
+.benefits_text{
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.apartments__title{
+  margin-bottom: 100px;
+}
+.apartments__cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.apartments__card{
+  position: relative;
+}
+.apartments__text{
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
