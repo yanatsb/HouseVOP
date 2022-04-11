@@ -108,6 +108,32 @@ body{
   text-align: center;
   color: #FFFFFF;
 }
+.header__adress{
+  position: relative;
+  padding-left: 36px;
+}
+.header__adress::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/header-adress.svg);
+  width: 21px;
+  height: 21px;
+}
+.header__phone{
+  position: relative;
+  padding-left: 35px;
+}
+.header__phone::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/header-phone.svg);
+  width: 21px;
+  height: 21px;
+}
 .benefits__row{
   display: flex;
   justify-content: center;
