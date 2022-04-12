@@ -151,7 +151,9 @@ body{
   height: 21px;
 }
 .benefits{
-  background-image: url();
+  background-image: url(../img/2.svg);
+  background-repeat: no-repeat;
+  background-position: 83%;
 }
 .benefits__row{
   display: flex;
@@ -179,6 +181,11 @@ body{
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
+}
+.apartments{
+  background-image: url(../img/3.svg);
+  background-repeat: no-repeat;
+  background-position: 13% 16%;
 }
 .apartments__title{
   margin-bottom: 100px;
@@ -242,6 +249,7 @@ body{
   height: 50px;
   margin-bottom: 35px;
   transition: all .3s;
+  color: #BEBEBE;
 }
 .form-input::placeholder,
 .form-input::placeholder{
@@ -291,6 +299,9 @@ body{
 }
 .video{
   margin-bottom: 180px;
+  background-image: url(../img/4.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
 }
 .video__wrapper{
   position: relative;
@@ -321,6 +332,9 @@ body{
 } 
 .map{
   margin-bottom: 180px;
+  background-image: url(../img/5.svg);
+  background-repeat: no-repeat;
+  background-position: 17% 35%;
 }
 .map__title{
   margin-bottom: 100px;
@@ -438,6 +452,9 @@ body{
 }
 
 @media (max-width:768px){
+  /* .header{
+    height: 170px;
+  } */
   .header__top{
     flex-wrap: wrap;
     padding: 15px 0;
