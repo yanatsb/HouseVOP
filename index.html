@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Жилой комплекс в историческом центре</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:regular,700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -51,7 +49,11 @@
           <h1 class="about__title">
             Жилой комплекс в историческом центре
           </h1>
-          <a class="about__mouse" href="#"></a>
+          <div class="scroll-downs">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
+          </div>
         </div>
         <div class="about__btn">
           <a class="about__adress">Наб. реки Фонтанки 10-15</a>
@@ -84,32 +86,32 @@
       <section class="apartments">
         <div class="container">
           <h2 class="apartments__title title">Наши квартиры</h2>
-          <div class="apartments__cards">
-            <div class="apartments__card">
+          <ul class="apartments__cards">
+            <li class="apartments__card">
               <img class="apartments__img" src="img/apartments1.jpg" alt="">
               <div class="apartments__wrapper">
                 <p class="apartments__text">Лофт — 3 этажа</p>
               </div>
-            </div>
-            <div class="apartments__card">
+            </li>
+            <li class="apartments__card">
               <img class="apartments__img" src="img/apartments2.jpg" alt="">
               <div class="apartments__wrapper">
                 <p class="apartments__text">Лофт — 3 этажа</p>
               </div>
-            </div>
-            <div class="apartments__card">
+            </li>
+            <li class="apartments__card">
               <img class="apartments__img" src="img/apartments1.jpg" alt="">
               <div class="apartments__wrapper">
                 <p class="apartments__text">Лофт — 3 этажа</p>
               </div>
-            </div>
-            <div class="apartments__card">
+            </li>
+            <li class="apartments__card">
               <img class="apartments__img" src="img/apartments2.jpg" alt="">
               <div class="apartments__wrapper">
                 <p class="apartments__text">Лофт — 3 этажа</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="look">
@@ -124,7 +126,7 @@
             <input class="look__form-name form-input" type="text" name="name" placeholder="Ваше имя" required>
             <input class="look__form-phone form-input" type="tel" name="tel" placeholder="Ваш телефон"required>
             <p class="look__form-text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</p>
-            <a class="form-btn" href="#">Посмотреть район</a>
+            <button class="form-btn" type="submit">Посмотреть район</button> 
           </form>
         </div>
       </section>
@@ -145,7 +147,7 @@
           Район на карте
         </h2>
         <div class="map__wrapper">
-          <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2444236738613!2d30.337633851602792!3d59.94467898178943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODc!5e0!3m2!1sru!2sru!4v1649524079451!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2444236738613!2d30.337633851602792!3d59.94467898178943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODc!5e0!3m2!1sru!2sru!4v1649524079451!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -156,7 +158,7 @@
           <p class="question__form-text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</p>
           <input class="form-input" type="text" name="name" placeholder="Ваше имя">
           <input class="form-input" type="tel" name="tel" placeholder="Ваш телефон">
-          <a class="form-btn" href="#">Посмотреть район</a>
+          <button class="form-btn" type="submit">Посмотреть район</button>
         </form>
       </div>
     </section>
@@ -200,23 +202,22 @@
           <a class="footer__link" href="#">Контакты</a>
         </li>
       </ul>
-      <ul class="footer__contacts">
-        <li class="footer__item">
+      <div class="footer__contacts">
+        <p class="footer__item">
           Адрес: Наб. реки Фонтанки 10-15
-        </li>
-        <li class="footer__item">
+        </p>
+        <p class="footer__item">
           Телефон:
           <a class="footer__link" href="tel:88121234567"> 8 (812) 123-45-67</a>
-        </li>
-        <li class="footer__item">
+        </p>
+        <p class="footer__item">
           Отдел продаж: 10:00 - 20:00
-        </li>
-        <li class="footer__item">
+        </p>
+        <p class="footer__item">
           E-mail: 
           <a class="footer__link accent" href="mailto:vip@housevip.ru">vip@housevip.ru
-          </a>
-        </li>
-        <li class="footer__item">
+          </p>
+        </p>
           <ul class="footer__item-social-list">
             <li class="footer__item-social-item">
               <a class="footer__item-social-link" href="#">
@@ -249,8 +250,7 @@
               </a>
             </li>
           </ul>
-        </li>
-      </ul>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
