@@ -179,7 +179,7 @@ body{
 .benefits{
   background-image: url(../img/2.svg);
   background-repeat: no-repeat;
-  background-position: 83%;
+  background-position: 1350px;
 }
 .benefits__row{
   display: flex;
@@ -211,7 +211,7 @@ body{
 .apartments{
   background-image: url(../img/3.svg);
   background-repeat: no-repeat;
-  background-position: 13% 16%;
+  background-position: 193px 85px;
 }
 .apartments__title{
   margin-bottom: 100px;
@@ -311,6 +311,8 @@ body{
   font-size: 16px;
   line-height: 27px;
   text-align: center;
+  color: #fff;
+  border: 0;
   background: #D4C17F;
   cursor: pointer;
   width: 255px;
@@ -327,7 +329,7 @@ body{
   margin-bottom: 180px;
   background-image: url(../img/4.svg);
   background-repeat: no-repeat;
-  background-position: 90%;
+  background-position: 1330px;
 }
 .video__wrapper{
   position: relative;
@@ -355,12 +357,16 @@ body{
   position: absolute;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
+  transition: .8s;
 } 
+.video__poster-btn:hover{
+  transform: scale(1.2);
+}
 .map{
   margin-bottom: 180px;
   background-image: url(../img/5.svg);
   background-repeat: no-repeat;
-  background-position: 17% 35%;
+  background-position: 270px;
 }
 .map__title{
   margin-bottom: 100px;
@@ -403,7 +409,9 @@ body{
 }
 .footer__item-social-list{
   display: flex;
-  gap: 20px;
+}
+.footer__item-social-item:not(:last-child){
+  margin-right: 20px;
 }
 .footer__list{
   font-size: 14px;
@@ -485,7 +493,7 @@ body{
   /* .header{
     height: 170px;
   } */
-  .header__top{
+  /* .header__top{
     flex-wrap: wrap;
     padding: 15px 0;
   }
@@ -499,7 +507,7 @@ body{
     display: flex;
     justify-content: center;
     min-width: 100%
-  }
+  } */
   .about__container{
     padding-top: 220px;
   }
