@@ -103,7 +103,7 @@ body{
 }
 .about__content{
   max-width: 556px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   text-align: center;
 }
 .about__title{
@@ -545,18 +545,9 @@ body{
   .header__link{
     font-size: 25px;
   }
-  .about__container{
-    padding-top: 220px;
-  }
   .about__title{
     font-size: 40px;
     margin-bottom: 30px;
-  }
-  .about__mouse{
-    margin-bottom: 120px;
-  }
-  .about__btn{
-    padding-bottom: 50px;
   }
   .benefits__list{
     flex-wrap: wrap;
@@ -589,14 +580,4 @@ body{
     padding-bottom: 15px;
   }
 }
-@media (max-width:600px){
-  
-  .about__mouse{
-    margin-bottom: 100px;
-  }
-  .about__btn{
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-  }
-}
+
