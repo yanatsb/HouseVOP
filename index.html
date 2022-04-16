@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightgallery.css">
 </head>
 
 <body>
@@ -90,35 +91,27 @@
     <section class="apartments">
       <div class="container">
         <h2 class="apartments__title title">Наши квартиры</h2>
-        <ul class="apartments__cards">
-          <li class="apartments__card">
-            <a class="apartments__link" href="">
-              <img class="apartments__img" src="img/apartments1.jpg" alt="">
-            </a>
+        <ul class="apartments__cards" id="ul-li">
+          <li class="apartments__card" data-src="img/apartments-big1.jpg">
+            <img class="apartments__img" src="img/apartments1.jpg" alt="">
             <div class="apartments__wrapper">
               <p class="apartments__text">Лофт — 3 этажа</p>
             </div>
           </li>
-          <li class="apartments__card">
-            <a class="apartments__link" href="">
-              <img class="apartments__img" src="img/apartments2.jpg" alt="">
-            </a>
+          <li class="apartments__card" data-src="img/apartments-big2.jpg">
+            <img class="apartments__img" src="img/apartments2.jpg" alt="">
             <div class="apartments__wrapper">
               <p class="apartments__text">Лофт — 3 этажа</p>
             </div>
           </li>
-          <li class="apartments__card">
-            <a class="apartments__link" href="">
-              <img class="apartments__img" src="img/apartments1.jpg" alt="">
-            </a>
+          <li class="apartments__card" data-src="img/apartments-big1.jpg">
+            <img class="apartments__img" src="img/apartments1.jpg" alt="">
             <div class="apartments__wrapper">
               <p class="apartments__text">Лофт — 3 этажа</p>
             </div>
           </li>
-          <li class="apartments__card">
-            <a class="apartments__link" href="">
-              <img class="apartments__img" src="img/apartments2.jpg" alt="">
-              </a>
+          <li class="apartments__card" data-src="img/apartments-big2.jpg">
+            <img class="apartments__img" src="img/apartments2.jpg" alt="">
             <div class="apartments__wrapper">
               <p class="apartments__text">Лофт — 3 этажа</p>
             </div>
@@ -286,6 +279,7 @@
   </footer>
   <script src="https://unpkg.com/imask"></script>
   <script src="js/main.js"></script>
+  <script src="js/lightgallery.min.js"></script>
 </body>
 
 </html>
