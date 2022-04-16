@@ -236,6 +236,8 @@ body{
 }
 .apartments__card{
   position: relative;
+  background-blend-mode: overlay;
+  background-image: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
 }
 .apartments__wrapper{
   position: absolute;
