@@ -24,3 +24,6 @@ function scrollToTop() {
 
 lightGallery(document.getElementById('ul-li'));
 
+id_element_1.onclick = function( ) { 
+  id_element_1.classList.remove("video__poster");
+};
